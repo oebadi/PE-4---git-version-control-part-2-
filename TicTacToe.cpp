@@ -12,6 +12,22 @@ void DisplayBoard(int A[3][3]) {
 	}
 }
 
+Position GetPlayerChoice(){
+	Position end;
+	int row, col;
+	std::cout << "Please enter row: " << std::endl;
+	std::cin >> row;
+	std::cout << "Please enter column: " << std::endl;
+	std::cin >> col;
+
+	end.row = pos_row;
+	end.col = pos_col;
+
+
+	return end;
+}
+
+
 int main(){
     int arr[3][3] = {{7, 7, 7}, {7, 7, 7}, {7, 7, 7}};
     
