@@ -1,3 +1,6 @@
+#include <iostream>
+#include <cstdio>
+
 struct Position {
 	int row;
 	int col;
