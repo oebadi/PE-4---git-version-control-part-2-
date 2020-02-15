@@ -1,3 +1,9 @@
+struct Position {
+	int row;
+	int col;
+	bool operator==(const Position &other) { return row == other.row && col == other.col;}
+};
+
 void *CreateBoard(){
     int mat[3][3] = {{1, 1, 1}, {1, 1, 1}, {1, 1, 1}};
     return *mat;
