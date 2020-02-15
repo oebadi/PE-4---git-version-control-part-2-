@@ -42,5 +42,26 @@ Position GetPlayerChoice(){
 
 
 int main(){
-    int arr[3][3] = {{7, 7, 7}, {7, 7, 7}, {7, 7, 7}};
+	int mat[3][3] = {{7, 7, 7}, {7, 7, 7}, {7, 7, 7}};
+	bool gameOver = false;
+	int player = 1;
+	Position pos;
+
+    while(!win){
+        pos = GetPlayerChoice();
+        PlaceMarker(pos, player, arr);
+        win = Winner(arr);
+        if(!win){
+            if(player == 1){
+                player = 2;
+            }
+            else{
+                player = 1;
+            }
+        }
+        DisplayBoard(arr);
+    }
+    std::cout << "Game over. Player: " << player << " won the game" << std::endl;
+	
+    return 0;
 }
