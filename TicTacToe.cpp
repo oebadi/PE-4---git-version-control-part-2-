@@ -12,6 +12,12 @@ void DisplayBoard(int A[3][3]) {
 	}
 }
 
+void PlaceMarker(Position p, int mark, int mat[3][3]) {
+
+	mat[p.row][p.col] = mark;
+
+}
+
 Position GetPlayerChoice(){
 	Position end;
 	int row, col;
