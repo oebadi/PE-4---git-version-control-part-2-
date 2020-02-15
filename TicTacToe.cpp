@@ -22,9 +22,7 @@ void DisplayBoard(int A[3][3]) {
 }
 
 void PlaceMarker(Position p, int mark, int mat[3][3]) {
-
 	mat[p.row][p.col] = mark;
-
 }
 
 Position GetPlayerChoice(){
@@ -45,5 +43,4 @@ Position GetPlayerChoice(){
 
 int main(){
     int arr[3][3] = {{7, 7, 7}, {7, 7, 7}, {7, 7, 7}};
-    
 }
